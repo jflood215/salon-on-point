@@ -1,0 +1,191 @@
+export interface Professional {
+  name: string;
+  slug: string;
+  initials: string;
+  image?: string;
+  role?: string;
+  acceptingClients?: boolean;
+  bio?: string;
+}
+
+export const professionals: Professional[] = [
+  {
+    name: "Kendra Denton",
+    slug: "kendra-denton",
+    initials: "KD",
+    role: "Beauty Professional",
+  },
+  {
+    name: "Ashleigh Taylor",
+    slug: "ashleigh-taylor",
+    initials: "AT",
+    role: "Beauty Professional",
+  },
+  {
+    name: "Monta Evans",
+    slug: "monta-evans",
+    initials: "ME",
+    image: "/images/monta-evans.jpg",
+    role: "Certified Peak Pilates Instructor & Personal Trainer",
+    acceptingClients: true,
+    bio: "Monta Evans is a certified Peak Pilates instructor with three years of teaching experience and an ACE Certified Personal Trainer with over 25 years in the fitness industry. She is passionate about helping clients build strength, improve mobility, and achieve sustainable health and fitness goals.",
+  },
+  {
+    name: "Shari Shaw",
+    slug: "shari-shaw",
+    initials: "SS",
+    image: "/images/shari-shaw.jpg",
+    role: "Hairstylist",
+    acceptingClients: true,
+    bio: "With 22 years in the industry, Shari offers a full range of services including color, haircuts, updos, and facial waxing. She especially enjoys foiling, creating beautiful, natural highlights.",
+  },
+  {
+    name: "Lauren Martinez",
+    slug: "lauren-martinez",
+    initials: "LM",
+    image: "/images/lauren-martinez.jpg",
+    role: "Massage Therapist, Esthetician & Yoga Instructor",
+    acceptingClients: true,
+    bio: "With over 18 years of experience as a massage therapist, 4 years as a skilled esthetician, and two decades as a dedicated yoga instructor, Lauren is deeply committed to the art of holistic wellness.",
+  },
+  {
+    name: "Marhia Ross",
+    slug: "marhia-ross",
+    initials: "MR",
+    image: "/images/marhia-ross.jpg",
+    role: "Licensed Massage Therapist",
+    acceptingClients: true,
+    bio: "A Licensed Massage Therapist and founder of Massage Maven in Zionsville with almost 20 years in health and wellness. Her approach combines trauma-sensitive touch, holistic practices, and intuitive care.",
+  },
+  {
+    name: "Andrea Godoy",
+    slug: "andrea-godoy",
+    initials: "AG",
+    image: "/images/andrea-godoy.jpg",
+    role: "Lash Extension Specialist",
+    acceptingClients: true,
+    bio: "Andrea is a newly state certified lash tech ready to help you feel even more marvelous. Whether you are looking for a natural everyday look or something with a little extra drama, she will work with you to create the most perfect set of lashes.",
+  },
+  {
+    name: "Abby McGowen",
+    slug: "abby-mcgowen",
+    initials: "AM",
+    image: "/images/abby-mcgowen.jpg",
+    role: "Hairstylist",
+    acceptingClients: true,
+    bio: "An extension and transition/correction specialist with almost 6 years of experience. Certified in 5 different extension methods, Abby excels in making the impossible possible with extensions and a little bit of magic.",
+  },
+  {
+    name: "Allison Boyer",
+    slug: "allison-boyer",
+    initials: "AB",
+    image: "/images/allison-boyer.jpg",
+    role: "Esthetician",
+    acceptingClients: true,
+    bio: "Allison has been an esthetician for 10 years, certified internationally in Microdermabrasion, chemical peels, facials, massage and much more. Her favorite service is the Image Vital C facial.",
+  },
+  {
+    name: "Amber Lyons",
+    slug: "amber-lyons",
+    initials: "AL",
+    image: "/images/amber-lyons.jpg",
+    role: "Hairstylist, Bridal Hair & Makeup Specialist",
+    bio: "Since 2006, Amber has loved being a hairstylist. With a background in Wella color she loves creating new looks and especially loves highlights. Her favorites are specialty updos for wedding parties, prom and other formal events.",
+  },
+  {
+    name: "Angie Shafer",
+    slug: "angie-shafer",
+    initials: "AS",
+    image: "/images/angie-shafer.jpg",
+    role: "Hairstylist",
+  },
+  {
+    name: "Cindy Alvarez",
+    slug: "cindy-alvarez",
+    initials: "CA",
+    image: "/images/cindy-alvarez.jpg",
+    role: "Hairstylist",
+    acceptingClients: true,
+    bio: "Cindy has been a hairstylist for 8 years. She loves to keep up with the latest trends and attends many classes to continue her education. She is Brazilian Blowout and Extension certified.",
+  },
+  {
+    name: "Dannette Clark",
+    slug: "dannette-clark",
+    initials: "DC",
+    image: "/images/dannette-clark.jpg",
+    role: "Hairstylist",
+    bio: "Dannette has been in the industry for 25+ years. She loves to do balayage, highlights, color and cutting. The love and passion she has for the beauty industry is beyond words.",
+  },
+  {
+    name: "Dr. Ben Petty",
+    slug: "dr-ben-petty",
+    initials: "BP",
+    image: "/images/dr-ben-petty.jpg",
+    role: "Medical Doctor, Botox Provider",
+    acceptingClients: true,
+    bio: "Dr. Ben Petty has 12 years of experience as an emergency physician and specializes in Botox treatments with a minimalistic and personalized approach. With an international certification from IAPAM.",
+  },
+  {
+    name: "Kelly Starkey",
+    slug: "kelly-starkey",
+    initials: "KS",
+    image: "/images/kelly-starkey.jpg",
+    role: "Nail Technician",
+    acceptingClients: true,
+    bio: "Kelly is a passionate nail artist specializing in Luminary structured manicures, Gel X nail extensions, and spa pedicures. She blends creativity with skill to create flawless designs.",
+  },
+  {
+    name: "Jennie Haltom",
+    slug: "jennie-haltom",
+    initials: "JH",
+    image: "/images/jennie-haltom.jpg",
+    role: "Hairstylist",
+    acceptingClients: true,
+    bio: "Jennie has been a stylist for 22 years. She would consider her style very natural. Her number one goal is to protect the quality of your hair while giving you what you want. She really enjoys color and color transformation.",
+  },
+  {
+    name: "Leslie Gimbel",
+    slug: "leslie-gimbel",
+    initials: "LG",
+    image: "/images/leslie-gimbel.jpg",
+    role: "Hairstylist",
+    bio: "For the past 12 years Leslie has been doing hair in the Indianapolis area. She is a very versatile stylist specializing in haircuts and multidimensional hair color.",
+  },
+  {
+    name: "Mayuri Patel",
+    slug: "mayuri-patel",
+    initials: "MP",
+    image: "/images/mayuri-patel.jpg",
+    role: "Eyebrow Shaping & Threading",
+    acceptingClients: true,
+    bio: "Mayuri has been threading eyebrows for over 12 years. Threading has been a growing passion of hers and she is excited to meet new faces at Salon on Point.",
+  },
+  {
+    name: "Miss Molly",
+    slug: "miss-molly",
+    initials: "MM",
+    image: "/images/miss-molly.jpg",
+    role: "Psychic Medium",
+    bio: "Miss Molly is a guest psychic residing in Phoenix, AZ. She is the mother of Sofia Flood and visits Zionsville a few times a year.",
+  },
+  {
+    name: "Sofia Flood",
+    slug: "sofia-flood",
+    initials: "SF",
+    image: "/images/sofia-flood.jpg",
+    role: "Hairstylist & Salon Owner",
+    bio: "20 years of experience doing what she loves. It is her strength to understand and capture the natural beauty in every color, texture and length.",
+  },
+  {
+    name: "Tarah Fye",
+    slug: "tarah-fye",
+    initials: "TF",
+    image: "/images/tarah-fye.jpg",
+    role: "Hairstylist",
+    bio: "Hairstylist since 2009, experienced in providing professional salon services with attention to detail in a relaxing stress-free environment.",
+  },
+];
+
+export const services = [
+  "Hair", "Skin", "Massage", "Botox", "Lashes", "Brows", "Nails", "Coffee", "Pilates"
+];

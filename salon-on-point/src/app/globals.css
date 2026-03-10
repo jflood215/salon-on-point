@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@200;300;400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: #fefefe; color: #2a2420; font-family: 'Outfit', sans-serif; }
+::selection { background: rgba(178,148,90,0.2); color: #2a2420; }
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes heroText {
+  from { opacity: 0; transform: translateY(36px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes lineGrow {
+  from { width: 0; }
+  to { width: 60px; }
+}
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.desktop-nav { display: flex; }
+.mobile-menu-btn { display: none; }
+.section-padding { padding: 100px 48px; }
+.cards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.suites-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; }
+.footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; padding: 32px 48px; }
+.contact-details { display: flex; justify-content: center; gap: 56px; flex-wrap: wrap; }
+.amenities-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+
+@media (max-width: 768px) {
+  .desktop-nav { display: none !important; }
+  .mobile-menu-btn { display: flex !important; }
+  .section-padding { padding: 60px 20px !important; }
+  .cards-grid { grid-template-columns: 1fr !important; }
+  .suites-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .footer-inner { padding: 24px 20px !important; flex-direction: column; text-align: center; }
+  .contact-details { flex-direction: column; gap: 28px !important; }
+  .amenities-grid { grid-template-columns: 1fr !important; }
+}
