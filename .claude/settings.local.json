@@ -3,7 +3,9 @@
     "allow": [
       "WebFetch(domain:www.salononpointsuites.com)",
       "Bash(curl -sL -o /c/Users/jfloo/Desktop/salon-on-point/salon-on-point/public/images/contact-hero.jpg \"https://www.salononpointsuites.com/uploads/1/0/8/5/108546703/background-images/861690055.jpg\" && ls -la /c/Users/jfloo/Desktop/salon-on-point/salon-on-point/public/images/contact-hero.jpg)",
-      "Bash(curl -sL -o /c/Users/jfloo/Desktop/salon-on-point/salon-on-point/public/images/about-hero.jpg \"https://www.salononpointsuites.com/uploads/1/0/8/5/108546703/background-images/1051659018.jpg\" && ls -la /c/Users/jfloo/Desktop/salon-on-point/salon-on-point/public/images/about-hero.jpg)"
+      "Bash(curl -sL -o /c/Users/jfloo/Desktop/salon-on-point/salon-on-point/public/images/about-hero.jpg \"https://www.salononpointsuites.com/uploads/1/0/8/5/108546703/background-images/1051659018.jpg\" && ls -la /c/Users/jfloo/Desktop/salon-on-point/salon-on-point/public/images/about-hero.jpg)",
+      "Bash(git config:*)",
+      "Bash(npx next:*)"
     ]
   }
 }

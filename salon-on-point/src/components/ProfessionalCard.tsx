@@ -40,7 +40,7 @@ export default function ProfessionalCard({ person, index }: { person: Profession
           }}>
             {person.image ? (
               <img src={person.image} alt={person.name}
-                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
+                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: person.imagePosition || "center top" }} />
             ) : person.initials}
           </div>
           <div style={{
