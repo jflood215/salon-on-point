@@ -214,18 +214,28 @@ export default function ProfessionalPage({ params }: { params: { slug: string } 
                       }}>{cat.category}</div>
                       {cat.items.map((item, ii) => (
                         <div key={ii} style={{
-                          display: "flex", justifyContent: "space-between", alignItems: "baseline",
                           paddingBottom: "8px", marginBottom: "8px",
                           borderBottom: "1px solid rgba(178,148,90,0.08)",
                         }}>
-                          <span style={{
-                            fontFamily: "'Outfit', sans-serif", fontSize: "14px",
-                            color: "#3a3430", fontWeight: 300,
-                          }}>{item.name}</span>
-                          <span style={{
-                            fontFamily: "'Outfit', sans-serif", fontSize: "14px",
-                            color: gold, fontWeight: 400, whiteSpace: "nowrap", marginLeft: "16px",
-                          }}>{item.price}</span>
+                          <div style={{
+                            display: "flex", justifyContent: "space-between", alignItems: "baseline",
+                          }}>
+                            <span style={{
+                              fontFamily: "'Outfit', sans-serif", fontSize: "14px",
+                              color: "#3a3430", fontWeight: 300,
+                            }}>{item.name}</span>
+                            <span style={{
+                              fontFamily: "'Outfit', sans-serif", fontSize: "14px",
+                              color: gold, fontWeight: 400, whiteSpace: "nowrap", marginLeft: "16px",
+                            }}>{item.price}</span>
+                          </div>
+                          {item.description && (
+                            <p style={{
+                              fontFamily: "'Outfit', sans-serif", fontSize: "12px",
+                              color: "#8a8480", fontWeight: 300, lineHeight: 1.6,
+                              marginTop: "4px", marginBottom: 0,
+                            }}>{item.description}</p>
+                          )}
                         </div>
                       ))}
                     </div>

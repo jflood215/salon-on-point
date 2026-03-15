@@ -1,6 +1,7 @@
 export interface ServiceItem {
   name: string;
   price: string;
+  description?: string;
 }
 
 export interface ServiceCategory {
@@ -59,7 +60,8 @@ export const professionals: Professional[] = [
     initials: "AT",
     image: "/images/ashleigh-taylor.jpg",
     profileImage: "/images/profiles/ashleigh-taylor.jpg",
-    role: "Beauty Professional",
+    role: "Hair Artist, Intuitive Guide, Astrology",
+    phone: "317.374.4477",
     bio: "With over 25 years of experience, Ashleigh approaches hair as both an art and a ritual of self-renewal. Her work goes beyond creating beautiful hair — it is about helping clients feel aligned, confident, and fully themselves.\n\nEach service is intentionally designed to be both restorative and refined. Signature haircuts and custom color are paired with calming scalp massages and warm towels, creating a spa-like experience that nurtures both outer beauty and inner balance.\n\nWhat truly sets Ashleigh apart is her integration of Astrology and Personal Alignment. Through optional Birth Chart Readings and intuitive conversation, she invites clients to explore not only how they wish to look, but who they are becoming.\n\nWhether you are stepping into a new season of life, seeking renewal, or simply desiring a more intentional beauty experience, Ashleigh offers a space where beauty, insight, and transformation naturally unfold. ✨",
   },
   {
@@ -161,18 +163,18 @@ export const professionals: Professional[] = [
     hours: ["Monday: CLOSED", "Tuesday: 10AM-3PM", "Wednesday: 5PM-8PM", "Thursday: 10AM-3PM", "Friday: 10AM-3PM", "Saturday: 5PM-8PM", "Sunday: 10AM-3PM"],
     services: [
       {
-        category: "Services",
+        category: "Massage (60/90 min)",
         items: [
-          { name: "Relaxation Ritual", price: "$110/$155" },
-          { name: "Muscle Melt", price: "$130/$175" },
-          { name: "Cleanse & Detox", price: "$100/$150" },
-          { name: "Sacred Momma", price: "$110/$155" },
-          { name: "Relax & Realign", price: "$100/$150" },
-          { name: "Contour Ritual", price: "$120/$160" },
+          { name: "Relaxation Ritual", price: "$110/$155", description: "A gentle, flowing massage that melts tension, improves circulation, and promotes total body relaxation. Ideal for stress relief and deep rest." },
+          { name: "Muscle Melt", price: "$130/$175", description: "Focused, therapeutic bodywork that targets chronic muscle tension and deep layers of fascia — perfect for pain relief and recovery." },
+          { name: "Cleanse & Detox", price: "$100/$150", description: "A light, rhythmic massage that supports the body's detox process by stimulating lymphatic flow, reducing puffiness, and enhancing immune function. Ideal post-surgery or during cleansing phase." },
+          { name: "Sacred Momma", price: "$110/$155", description: "A nurturing, supportive massage designed specifically for expectant mothers. Gentle techniques ease aches, reduce swelling, and promote relaxation during all trimesters." },
+          { name: "Relax & Realign", price: "$100/$150", description: "Combines soothing massage with intuitive energy work to clear blockages, rebalance your chakras, and restore your natural flow — leaving you grounded and energetically refreshed." },
+          { name: "Contour Ritual", price: "$120/$160", description: "A focused, firm-pressure massage using sculpting techniques to help tone, contour, and smooth the body. Encourages lymphatic drainage and can be combined with your wellness goals." },
         ],
       },
       {
-        category: "Upgrades",
+        category: "Massage Upgrades",
         items: [
           { name: "Deep Tissue Focus", price: "$20" },
           { name: "Hot Stones", price: "$20" },
@@ -187,11 +189,33 @@ export const professionals: Professional[] = [
       {
         category: "Facials",
         items: [
-          { name: "Everyday Glow", price: "$100" },
-          { name: "Clear Skin Reset", price: "$110" },
-          { name: "Timeless Glow", price: "$120This age-defying treatment uses firming techniques and active ingredients to smooth fine lines, boost collagen, and restore youthful radiance." },
-          { name: "Hydra Glow", price: "$110" },
-          { name: "The Mini Refresh", price: "$70Pressed for ti" },
+          { name: "Everyday Glow", price: "$100", description: "A customized, deep cleansing facial designed to refresh, exfoliate and restore your natural glow. Perfect for maintaining skin health and radiance." },
+          { name: "Clear Skin Reset", price: "$110", description: "Targets breakouts with this clarifying facial that soothes inflammation, deep cleans pores, and promotes a calm, clear complexion." },
+          { name: "Timeless Glow", price: "$120", description: "This age-defying treatment uses firming techniques and active ingredients to smooth fine lines, boost collagen, and restore youthful radiance." },
+          { name: "Hydra Glow", price: "$110", description: "Quench dry, dull skin with an intense moisture surge. This facial deeply hydrates, plumps, and revives skin for a dewy, refreshed look." },
+          { name: "The Mini Refresh", price: "$70", description: "Pressed for time? This efficient, no-fuss facial delivers instant results in under 30 minutes — leaving your skin fresh, clean and glowing." },
+          { name: "Back Detox Ritual", price: "$100", description: "A deep-cleansing treatment for your back that targets breakouts, uneven texture and dryness. Includes exfoliation, hot towels and hydration for smooth, radiant skin." },
+        ],
+      },
+      {
+        category: "Facial Upgrades",
+        items: [
+          { name: "Dermaplaning", price: "$30" },
+          { name: "Facial Sculpting", price: "$25" },
+          { name: "Face Lymphatic Drainage", price: "$25" },
+        ],
+      },
+      {
+        category: "Waxing",
+        items: [
+          { name: "Eyebrow", price: "$20" },
+          { name: "Lip/Chin", price: "$12" },
+          { name: "Underarm", price: "$25" },
+          { name: "Arms", price: "$45 half / $45 full" },
+          { name: "Legs", price: "$45 half / $70 full" },
+          { name: "Bikini", price: "$40" },
+          { name: "Brazilian", price: "$65" },
+          { name: "Back/Chest", price: "$60" },
         ],
       },
     ],
@@ -281,11 +305,12 @@ export const professionals: Professional[] = [
     phone: "765.978.8435",
     suite: "Suite #7",
     instagram: "@powerofthe_brush",
-    hours: ["Monday: CLOSED", "Tuesday: CLOSED", "Wednesday: CLOSED", "Thursday: 11AM-7PM", "Friday: 11AM-7PM", "Saturday: CLOSED", "Sunday: CLOSED"],
+    hours: ["Monday: CLOSED", "Tuesday: CLOSED", "Wednesday: 11AM-7PM", "Thursday: 11AM-7PM", "Friday: CLOSED", "Saturday: CLOSED", "Sunday: CLOSED"],
     services: [
       {
         category: "Extensions",
         items: [
+          { name: "Extensions (per row/bag)", price: "$110" },
         ],
       },
       {
@@ -299,7 +324,8 @@ export const professionals: Professional[] = [
       {
         category: "Color & Highlighting",
         items: [
-          { name: "Color Correction", price: "$150 / Hour" },
+          { name: "Color", price: "$115" },
+          { name: "Color Correction", price: "$150" },
         ],
       },
       {
@@ -530,7 +556,7 @@ export const professionals: Professional[] = [
     role: "Medical Doctor, Botox Provider",
     acceptingClients: true,
     bio: "Hi, I am Dr. Ben Petty, the newest team member of Salon on Point. I live in Zionsville with my wife Ali and my two sons Jack and Theo. I have 12 years of experience as an emergency physician, and I specialize in Botox treatments with a minimalistic and personalized approach. With an international certification from IAPAM, I am committed to the highest standards in aesthetic medicine. Let's redefine your look together! Using botox I can also help manage disruptive conditions such as TMJ, bruxism (teeth grinding), migraines and hyperhydrosis (excessive sweatiness).",
-    phone: "317.679-1309",
+    phone: "812.554.8354",
     suite: "Suite #12",
     hours: ["Monday: 8AM-5:30PM", "Tuesday: CLOSED", "Wednesday: 2:15PM-5:30PM", "Thursday: CLOSED", "Friday: CLOSED", "Saturday: 2:15PM-5:30PM", "Sunday: CLOSED"],
     testimonials: [
@@ -749,6 +775,7 @@ export const professionals: Professional[] = [
       {
         category: "Color",
         items: [
+          { name: "Color", price: "$200" },
         ],
       },
     ],
@@ -809,5 +836,5 @@ export const professionals: Professional[] = [
 ];
 
 export const services = [
-  "Hair", "Skin", "Massage", "Botox", "Lashes", "Brows", "Nails", "Coffee", "Pilates"
+  "Hair", "Skin", "Massage", "Botox", "Lashes", "Brows", "Nails", "Pilates"
 ];

@@ -106,7 +106,7 @@ export default function HomePage() {
               fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 300,
               lineHeight: 1.75, color: "#2a2420",
             }}>
-              Hair. Skin. Massage. Botox. Lashes. Brows. Nails. Coffee. Pilates.
+              Hair. Skin. Massage. Botox. Lashes. Brows. Nails. Pilates.
               Salon on Point Suites brings together independent beauty professionals
               under one roof, each dedicated to their craft and to you.
             </p>
