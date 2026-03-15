@@ -25,6 +25,7 @@ export interface Professional {
   phone?: string;
   suite?: string;
   instagram?: string;
+  website?: string;
   bookingUrl?: string;
   hours?: string[];
   services?: ServiceCategory[];
@@ -60,9 +61,50 @@ export const professionals: Professional[] = [
     initials: "AT",
     image: "/images/ashleigh-taylor.jpg",
     profileImage: "/images/profiles/ashleigh-taylor.jpg",
-    role: "Hair Artist, Intuitive Guide, Astrology",
+    role: "Hairstylist & Intuitive Guide",
+    acceptingClients: true,
     phone: "317.374.4477",
+    website: "https://ashleightaylor10.glossgenius.com/services",
+    bookingUrl: "https://ashleightaylor10.glossgenius.com/services",
+    hours: ["Monday: CLOSED", "Tuesday: CLOSED", "Wednesday: 9AM-5PM", "Thursday: CLOSED", "Friday: 9AM-5PM", "Saturday: CLOSED", "Sunday: CLOSED"],
     bio: "With over 25 years of experience, Ashleigh approaches hair as both an art and a ritual of self-renewal. Her work goes beyond creating beautiful hair — it is about helping clients feel aligned, confident, and fully themselves.\n\nEach service is intentionally designed to be both restorative and refined. Signature haircuts and custom color are paired with calming scalp massages and warm towels, creating a spa-like experience that nurtures both outer beauty and inner balance.\n\nWhat truly sets Ashleigh apart is her integration of Astrology and Personal Alignment. Through optional Birth Chart Readings and intuitive conversation, she invites clients to explore not only how they wish to look, but who they are becoming.\n\nWhether you are stepping into a new season of life, seeking renewal, or simply desiring a more intentional beauty experience, Ashleigh offers a space where beauty, insight, and transformation naturally unfold. ✨",
+    services: [
+      {
+        category: "Consultations",
+        items: [
+          { name: "New Color & Extension Guest Consult", price: "Free", description: "All new color and extension guests begin with a complimentary consultation. I allow additional time at no charge so we can align on your goals and create a customized plan without feeling rushed. In many cases, your service may be performed the same day. Depending on your desired result and your hair's current condition, a separate appointment may be recommended." },
+        ],
+      },
+      {
+        category: "Intuitive Sessions",
+        items: [
+          { name: "Personal Alignment Session", price: "$175", description: "Available In-Person or Virtual. I serve as your guide — blending intuitive insight with astrological chart translation to help you understand your unique design. Together, we explore your path and purpose, natural gifts, patterns, and timing. This is a space for clarity, self-trust, and empowered decision-making." },
+          { name: "Relationship Insight Session", price: "$225", description: "Available In-Person or Virtual. This session explores how your individual charts interact, helping you better understand your own needs, patterns, and purpose within the relationship — while gaining insight into your partner's perspective. Designed to foster clarity, alignment, and meaningful connection." },
+        ],
+      },
+      {
+        category: "Hair Services",
+        items: [
+          { name: "Renewal Blowout", price: "$65", description: "A relaxing shampoo experience paired with a soothing scalp massage and expert blow-dry styling. Designed to leave you feeling pampered, polished, and perfectly prepared for whatever your day — or special event — holds." },
+          { name: "Signature Haircut", price: "$95", description: "A customized precision haircut tailored to your face shape and lifestyle. Includes a therapeutic scalp massage, warm towel ritual, and personalized styling guidance so you can confidently recreate your look at home." },
+          { name: "Express Precision Cut", price: "$65", description: "A streamlined haircut designed for shorter styles or maintenance trims. Includes precision cutting without blow-dry styling. Ideal for guests maintaining a cropped or classic shape." },
+          { name: "Dimensional Color Experience", price: "$125+/hr", description: "All color services are customized and billed hourly. Whether refreshing your tone, enhancing brightness, or creating dimensional highlights, each service is tailored to your hair goals. Includes a relaxing scalp massage during processing. Optional haircut and blowout available with all color services." },
+        ],
+      },
+      {
+        category: "Extensions",
+        items: [
+          { name: "BELLAMI Invisible Tape-Ins", price: "$125+", description: "Custom-blended BELLAMI Invisible Tape-In Extensions are designed to add length and volume while maintaining a natural, lightweight feel. Clip-in options are also available. A consultation is required. Hair is custom ordered and the cost of hair and installation will be due at your installation appointment." },
+        ],
+      },
+      {
+        category: "Lashes & Brows",
+        items: [
+          { name: "Temporary Lash Extensions", price: "$25", description: "Lightweight individual lashes applied strategically to add soft fullness and definition. Perfect for date nights, photos, weddings, or special events. Designed to enhance your natural beauty without the commitment of long-term extensions." },
+          { name: "Brow Wax & Shape", price: "$25", description: "Precision brow waxing to clean and define the natural brow shape. Lip or chin waxing may be included if desired." },
+        ],
+      },
+    ],
   },
   {
     name: "Monta Evans",
@@ -239,17 +281,24 @@ export const professionals: Professional[] = [
     bio: "Hi, I'm Marhia Ross. I'm a Licensed Massage Therapist, and the founder of Massage Maven here in Zionsville. I've spent almost 20 years in health and wellness, working with everyone from Olympic athletes to frontline medical professionals. Still, what I love most is caring for people in my own community. I view massage as essential care for the nervous system, not a luxury. My approach combines trauma-sensitive touch, holistic practices, and intuitive care to create restorative, personalized sessions that help you feel safe, supported, and renewed. Beyond my studio, I teach at a local massage school, mentor therapists, and train spa teams. When I'm not working, I'm with my two kids, our goofy dogs, or spending time with friends and neighbors around town.",
     phone: "317-732-7037",
     instagram: "@marhiamassagemaven",
+    website: "https://massagemaven.org",
+    bookingUrl: "https://massagemaven.org",
     hours: ["Monday: 9AM - 6PM", "Tuesday: CLOSED", "Wednesday: 9AM- 6PM", "Thursday: 9AM - 1PM", "Friday: CLOSED", "Saturday: 9AM - NOON", "Sunday: CLOSED"],
     services: [
       {
-        category: "Services",
+        category: "Massage",
         items: [
-          { name: "60-Min Swedish &ndash;", price: "$150" },
-          { name: "90-Min Swedish &ndash;", price: "$225" },
-          { name: "90-Min Rock & Roll Massage &ndash;", price: "$225" },
-          { name: "120-Min Lomi Lomi &ndash;", price: "$300" },
-          { name: "60-Min Shirodhara -", price: "$175" },
-          { name: "Optional Enhancements &ndash;", price: "$0 (upon request)" },
+          { name: "60-Min Swedish", price: "$150", description: "Gentle, flowing strokes designed to relieve tension and promote relaxation." },
+          { name: "90-Min Swedish", price: "$225", description: "Extended session focused on deep relaxation and nervous system support." },
+          { name: "90-Min Rock & Roll Massage", price: "$225", description: "Deep, heated therapeutic massage to increase energy and restore comfort." },
+          { name: "120-Min Lomi Lomi", price: "$300", description: "Hawaiian-inspired techniques to soothe, nurture, and support overall well-being." },
+          { name: "60-Min Shirodhara", price: "$175", description: "A meditative oil treatment designed to calm the mind and promote balance." },
+        ],
+      },
+      {
+        category: "Optional Enhancements",
+        items: [
+          { name: "Warm Bamboo, Sound Healing, Cupping, Gua-Sha, Aromatherapy, Gentle Stretching, Deep Tissue", price: "Free", description: "Available upon request. Each session is fully personalized and tailored to your individual needs." },
         ],
       },
     ],

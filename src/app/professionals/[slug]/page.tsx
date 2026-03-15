@@ -145,7 +145,18 @@ export default function ProfessionalPage({ params }: { params: { slug: string } 
                 {person.instagram && (
                   <div style={{ marginBottom: "16px" }}>
                     <div style={{ fontFamily: "'Outfit', sans-serif", fontSize: "12px", color: "#6a6460", fontWeight: 300, marginBottom: "4px" }}>Instagram</div>
-                    <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "20px", color: "#2a2420" }}>{person.instagram}</div>
+                    <a href={`https://instagram.com/${person.instagram.replace(/^@/, '')}`} target="_blank" rel="noopener noreferrer" style={{
+                      fontFamily: "'Cormorant Garamond', serif", fontSize: "20px", color: "#2a2420", textDecoration: "none",
+                    }}>{person.instagram}</a>
+                  </div>
+                )}
+
+                {person.website && (
+                  <div style={{ marginBottom: "16px" }}>
+                    <div style={{ fontFamily: "'Outfit', sans-serif", fontSize: "12px", color: "#6a6460", fontWeight: 300, marginBottom: "4px" }}>Website</div>
+                    <a href={person.website} target="_blank" rel="noopener noreferrer" style={{
+                      fontFamily: "'Cormorant Garamond', serif", fontSize: "20px", color: "#2a2420", textDecoration: "none",
+                    }}>{person.website.replace(/^https?:\/\//, '')}</a>
                   </div>
                 )}
 
