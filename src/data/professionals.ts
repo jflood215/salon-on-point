@@ -64,6 +64,7 @@ export const professionals: Professional[] = [
     role: "Hairstylist & Intuitive Guide",
     acceptingClients: true,
     phone: "317.374.4477",
+    instagram: "@ashleigh.taylor10",
     website: "https://ashleightaylor10.glossgenius.com/services",
     bookingUrl: "https://ashleightaylor10.glossgenius.com/services",
     hours: ["Monday: CLOSED", "Tuesday: CLOSED", "Wednesday: 9AM-5PM", "Thursday: CLOSED", "Friday: 9AM-5PM", "Saturday: CLOSED", "Sunday: CLOSED"],
