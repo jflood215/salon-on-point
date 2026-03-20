@@ -47,6 +47,13 @@ export default function ProfessionalCard({ person, index }: { person: Profession
             fontFamily: "'Cormorant Garamond', serif",
             fontSize: "17px", color: "#2a2420", fontWeight: 500, letterSpacing: "0.3px",
           }}>{person.name}</div>
+          {(person.cardTitle || person.role) && (
+            <div style={{
+              fontFamily: "'Outfit', sans-serif",
+              fontSize: "11px", letterSpacing: "1.5px", textTransform: "uppercase",
+              color: gold, marginTop: "4px", fontWeight: 300,
+            }}>{person.cardTitle || person.role}</div>
+          )}
           <div style={{
             fontFamily: "'Outfit', sans-serif",
             fontSize: "12px", letterSpacing: "2.5px", textTransform: "uppercase",

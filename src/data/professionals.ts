@@ -20,6 +20,7 @@ export interface Professional {
   galleryImages?: string[];
   testimonials?: { quote: string; name: string }[];
   role?: string;
+  cardTitle?: string;
   acceptingClients?: boolean;
   bio?: string;
   phone?: string;
@@ -39,7 +40,7 @@ export const professionals: Professional[] = [
     image: "/images/kendra-denton.JPG",
     imagePosition: "center 20%",
     profileImage: "/images/kendra-denton.JPG",
-    role: "Beauty Professional",
+    role: "Massage Therapist",
     bio: "With 20+ years as a Licensed Massage Therapist, 15 years as a Licensed Nail Technician and Esthetician, and 13 years as an Educator, she is a trusted expert in therapeutic bodywork and wellness. Specializing in pain management, prenatal care, sports massage, and targeted therapeutic techniques, her goal is to help clients move better, feel better, and live pain-free.",
     phone: "317-732-7037",
     bookingUrl: "https://www.massagemaven.org/appointments",
@@ -61,7 +62,8 @@ export const professionals: Professional[] = [
     initials: "AT",
     image: "/images/ashleigh-taylor.jpg",
     profileImage: "/images/profiles/ashleigh-taylor.jpg",
-    role: "Hairstylist & Intuitive Guide",
+    role: "Hairstylist, Intuitive Guide & Astrology",
+    cardTitle: "Hairstylist",
     acceptingClients: true,
     phone: "317.374.4477",
     instagram: "@ashleigh.taylor10",
@@ -114,6 +116,7 @@ export const professionals: Professional[] = [
     image: "/images/monta-evans.jpg",
     profileImage: "/images/profiles/monta-evans.jpg",
     role: "Certified Peak Pilates Instructor & Personal Trainer",
+    cardTitle: "Pilates Instructor & Personal Trainer",
     acceptingClients: true,
     bio: "Monta Evans is a certified Peak Pilates instructor with three years of teaching experience and an ACE Certified Personal Trainer with over 25 years in the fitness industry. She is passionate about helping clients build strength, improve mobility, and achieve sustainable health and fitness goals. Monta's approach blends expert instruction with personalized support, empowering clients to feel stronger, more confident, and balanced in their bodies.",
     phone: "435.512.1291",
@@ -199,6 +202,7 @@ export const professionals: Professional[] = [
     profileImage: "/images/profiles/lauren-martinez.jpg",
     galleryImages: ["/images/gallery/lauren-martinez-gallery.jpg"],
     role: "Massage Therapist, Esthetician & Yoga Instructor",
+    cardTitle: "Massage Therapist & Esthetician",
     acceptingClients: true,
     bio: "With over 18 years of experience as a massage therapist, 4 years as a skilled esthetician, and two decades as a dedicated yoga instructor, I am deeply committed to the art of holistic wellness. I offer a comprehensive approach to healing, specializing in techniques such as deep tissue, Swedish, hot stone therapy, myofascial release, cupping, and aromatherapy. My expertise also extends to facial massage, facial sculpting, body sculpting, and customized skincare treatments, including facials and professional waxing services. I incorporate energy work and sound healing into my sessions to support emotional balance and inner alignment. Passionate about caring for others, I am drawn to the transformative power of self-care and mind-body connection. Outside of my practice, I find inspiration in art and creativity, embracing their therapeutic qualities. I also enjoy the outdoors, fitness, and hiking, living a lifestyle that fosters balance, vitality, and personal expression.",
     phone: "765.721-5068",
@@ -277,7 +281,7 @@ export const professionals: Professional[] = [
     image: "/images/marhia-ross.jpg",
     profileImage: "/images/profiles/marhia-ross.jpg",
     galleryImages: ["/images/gallery/marhia-ross-gallery.jpg"],
-    role: "Licensed Massage Therapist",
+    role: "Massage Therapist",
     acceptingClients: true,
     bio: "Hi, I'm Marhia Ross. I'm a Licensed Massage Therapist, and the founder of Massage Maven here in Zionsville. I've spent almost 20 years in health and wellness, working with everyone from Olympic athletes to frontline medical professionals. Still, what I love most is caring for people in my own community. I view massage as essential care for the nervous system, not a luxury. My approach combines trauma-sensitive touch, holistic practices, and intuitive care to create restorative, personalized sessions that help you feel safe, supported, and renewed. Beyond my studio, I teach at a local massage school, mentor therapists, and train spa teams. When I'm not working, I'm with my two kids, our goofy dogs, or spending time with friends and neighbors around town.",
     phone: "317-732-7037",
@@ -317,7 +321,7 @@ export const professionals: Professional[] = [
     image: "/images/andrea-godoy.jpg",
     profileImage: "/images/profiles/andrea-godoy.jpg",
     galleryImages: ["/images/gallery/andrea-godoy-gallery.jpg"],
-    role: "Lash Extension Specialist",
+    role: "Lash Technician",
     acceptingClients: true,
     bio: "Hi Beauties! My name is Andrea, and I am a newly state certified lash tech ready to help you feel even more marvelous than you already are. By day, I am a bilingual pregnancy counselor, so you can bet I'll also love listening to you! Whether you are looking for a natural everyday look or something with a little extra drama, I'll work with you to create the most perfect set of lashes! I can't wait to meet you!",
     phone: "574.601.6456",
@@ -455,6 +459,7 @@ export const professionals: Professional[] = [
     image: "/images/amber-lyons.jpg",
     profileImage: "/images/profiles/amber-lyons.jpg",
     role: "Hairstylist, Bridal Hair & Makeup Specialist",
+    cardTitle: "Hairstylist",
     bio: "Since 2006, Amber has loved being a hairstylist and sharing a few laughs with clients. With a background in Wella color she loves creating new looks and especially loves highlights in all it's forms. Amber is passionate with all things hair, but her favorites are specialty updos for wedding parties, prom and other formal events. You can view some of her work on Instagram @laroy_beauty.",
     phone: "317.413.1540",
     suite: "Suite #6",
@@ -603,11 +608,12 @@ export const professionals: Professional[] = [
     image: "/images/dr-ben-petty.jpg",
     profileImage: "/images/profiles/dr-ben-petty.jpg",
     galleryImages: ["/images/gallery/dr-ben-petty-gallery.jpg"],
-    role: "Medical Doctor, Botox Provider",
+    role: "Concierge Botox Provider",
     acceptingClients: true,
     bio: "Hi, I am Dr. Ben Petty, the newest team member of Salon on Point. I live in Zionsville with my wife Ali and my two sons Jack and Theo. I have 12 years of experience as an emergency physician, and I specialize in Botox treatments with a minimalistic and personalized approach. With an international certification from IAPAM, I am committed to the highest standards in aesthetic medicine. Let's redefine your look together! Using botox I can also help manage disruptive conditions such as TMJ, bruxism (teeth grinding), migraines and hyperhydrosis (excessive sweatiness).",
     phone: "812.554.8354",
     suite: "Suite #12",
+    bookingUrl: "https://www.clean-aesthetic.com/",
     hours: ["Monday: 8AM-5:30PM", "Tuesday: CLOSED", "Wednesday: 2:15PM-5:30PM", "Thursday: CLOSED", "Friday: CLOSED", "Saturday: 2:15PM-5:30PM", "Sunday: CLOSED"],
     testimonials: [
       { quote: "Dr. Ben was so willing to work me into his schedule! He was friendly and very professional. I appreciate the follow up and have already recommended him to family and friends.", name: "Sara E." },
@@ -760,11 +766,13 @@ export const professionals: Professional[] = [
     image: "/images/mayuri-patel.jpg",
     profileImage: "/images/profiles/mayuri-patel.jpg",
     galleryImages: ["/images/gallery/mayuri-patel-gallery.jpg"],
-    role: "Eyebrow Shaping & Threading",
+    role: "Eyebrow Threading",
+    cardTitle: "Eyebrow Threading",
     acceptingClients: true,
     bio: "Hello there! My name is Mayuri (feel free to call me May) and I have been threading eyebrows for over 12 years! I have been married for 9 years and we have a 2 year old son (my joy). I currently reside in Zionsville, IN. Threading has been a growing passion of mine and I have always wanted to open a business using the skills I have. I finally have that opportunity to keep my passion going with Salon on Point. I am excited to meet new faces and start my threading journey at this new location!",
     phone: "317.902.1925",
     suite: "Suite #1",
+    bookingUrl: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ18JnE2nfddUIqMusvP_wiv_eJxRWwwF3BhCNr1iFNF_T5cr7ZIHiS5Vcq2_BAHIA6avpVSoK-_",
     instagram: "@eye.browsbymay",
     hours: ["Monday: 4PM - 5:30PM", "Tuesday: 4PM - 5:30PM", "Wednesday: CLOSED", "Thursday: CLOSED", "Friday: 10AM -12PM", "Saturday: CLOSED", "Sunday: CLOSED"],
     services: [
