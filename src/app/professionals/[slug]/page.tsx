@@ -82,7 +82,7 @@ export default function ProfessionalPage({ params }: { params: { slug: string } 
                     fontFamily: "'Outfit', sans-serif",
                     fontSize: "12px", color: "#5a8a5a", fontWeight: 400,
                     marginBottom: "24px",
-                  }}>Accepting New Clients</div>
+                  }}>{person.acceptingClientsText || "Accepting New Clients"}</div>
                 </FadeIn>
               )}
 
@@ -128,8 +128,8 @@ export default function ProfessionalPage({ params }: { params: { slug: string } 
 
                 {person.phone && (
                   <div style={{ marginBottom: "16px" }}>
-                    <div style={{ fontFamily: "'Outfit', sans-serif", fontSize: "12px", color: "#6a6460", fontWeight: 300, marginBottom: "4px" }}>Phone</div>
-                    <a href={`tel:${person.phone.replace(/[.\-]/g, '')}`} style={{
+                    <div style={{ fontFamily: "'Outfit', sans-serif", fontSize: "12px", color: "#6a6460", fontWeight: 300, marginBottom: "4px" }}>{person.textOnly ? "Text Only" : "Phone"}</div>
+                    <a href={`${person.textOnly ? 'sms' : 'tel'}:${person.phone.replace(/[.\-]/g, '')}`} style={{
                       fontFamily: "'Cormorant Garamond', serif", fontSize: "20px", color: "#2a2420", textDecoration: "none",
                     }}>{person.phone}</a>
                   </div>
@@ -192,7 +192,7 @@ export default function ProfessionalPage({ params }: { params: { slug: string } 
                 )}
 
                 {(person.bookingUrl || person.phone) && (
-                  <a href={person.bookingUrl || `tel:${person.phone!.replace(/[.\-]/g, '')}`}
+                  <a href={person.bookingUrl || `${person.textOnly ? 'sms' : 'tel'}:${person.phone!.replace(/[.\-]/g, '')}`}
                     {...(person.bookingUrl ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                     style={{
                     display: "inline-block", marginTop: "32px",
@@ -223,6 +223,13 @@ export default function ProfessionalPage({ params }: { params: { slug: string } 
                         fontSize: "20px", fontWeight: 500,
                         color: "#2a2420", marginBottom: "12px",
                       }}>{cat.category}</div>
+                      {cat.note && (
+                        <div style={{
+                          fontFamily: "'Outfit', sans-serif", fontSize: "12px",
+                          color: "#8a8480", fontWeight: 300, fontStyle: "italic",
+                          marginBottom: "12px", marginTop: "-4px",
+                        }}>{cat.note}</div>
+                      )}
                       {cat.items.map((item, ii) => (
                         <div key={ii} style={{
                           paddingBottom: "8px", marginBottom: "8px",

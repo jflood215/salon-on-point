@@ -22,6 +22,8 @@ export interface Professional {
   role?: string;
   cardTitle?: string;
   acceptingClients?: boolean;
+  acceptingClientsText?: string;
+  textOnly?: boolean;
   bio?: string;
   phone?: string;
   suite?: string;
@@ -33,6 +35,68 @@ export interface Professional {
 }
 
 export const professionals: Professional[] = [
+  {
+    name: "Mya Folden",
+    slug: "mya-folden",
+    initials: "MF",
+    image: "/images/mya-folden.jpg",
+    profileImage: "/images/mya-folden.jpg",
+    role: "Hairstylist",
+    acceptingClients: true,
+    bio: "Hi, I'm Mya Folden, a passionate hairstylist dedicated to helping every guest feel confident, beautiful, and cared for. With an eye for detail and a love for creativity, I specialize in lived in color and modern cuts that bring out your best self.\n\nAt Suite Joy, it's more than just hair. It's about creating an experience where you leave feeling refreshed, empowered, and joyful. I believe in personalized care, a modern touch, and a warm, welcoming environment that feels like home.\n\nLet's make your hair dreams a reality because you deserve to shine every day!",
+    phone: "765.978.8744",
+    instagram: "@myafolden.hair",
+    bookingUrl: "https://myafolden.glossgenius.com",
+    hours: ["Monday: CLOSED", "Tuesday: 10AM-6PM", "Wednesday: 10AM-6PM", "Thursday: 10AM-6PM", "Friday: 8AM-3PM", "Saturday: 8AM-3PM", "Sunday: CLOSED"],
+    services: [
+      {
+        category: "Cut / Blowouts",
+        items: [
+          { name: "Women's Haircut", price: "$50" },
+          { name: "Men's Haircut", price: "$40" },
+          { name: "Shampoo Blowout", price: "$45" },
+          { name: "Special Event Style", price: "$85" },
+        ],
+      },
+      {
+        category: "Color Services",
+        items: [
+          { name: "All Over Color / Style", price: "$110" },
+          { name: "All Over Color / Cut", price: "$160" },
+          { name: "Color Retouch / Style", price: "$80" },
+          { name: "Color Retouch / Cut", price: "$130" },
+          { name: "Express Highlight / Style", price: "$80+" },
+          { name: "Express Highlight / Cut", price: "$130+" },
+          { name: "Crown Highlight / Cut", price: "$200+" },
+          { name: "Full Highlight / Style", price: "$180+" },
+          { name: "Full Highlight / Cut", price: "$230+" },
+          { name: "Retouch / Express / Style", price: "$160+" },
+          { name: "Retouch / Express / Cut", price: "$210+" },
+          { name: "Retouch / Crown / Style", price: "$230+" },
+          { name: "Retouch / Crown / Cut", price: "$280+" },
+          { name: "Retouch / Full / Style", price: "$260+" },
+          { name: "Retouch / Full / Cut", price: "$310+" },
+        ],
+      },
+      {
+        category: "Treatments & Add-ons",
+        items: [
+          { name: "Toner / Gloss", price: "$30" },
+          { name: "Natural Tech Tailoring", price: "$40" },
+          { name: "Beautiful Things Treatment", price: "$20" },
+          { name: "Malibu Treatment", price: "$25" },
+        ],
+      },
+      {
+        category: "Eyebrow Services",
+        items: [
+          { name: "Eyebrow Wax", price: "$15" },
+          { name: "Eyebrow Tint", price: "$20" },
+          { name: "Eyebrow Wax & Tint", price: "$30" },
+        ],
+      },
+    ],
+  },
   {
     name: "Kendra Denton",
     slug: "kendra-denton",
@@ -63,7 +127,7 @@ export const professionals: Professional[] = [
     image: "/images/ashleigh-taylor.jpg",
     profileImage: "/images/profiles/ashleigh-taylor.jpg",
     role: "Hairstylist, Intuitive Guide & Astrology",
-    cardTitle: "Hairstylist",
+    cardTitle: "Hairstylist & Intuitive Guide",
     acceptingClients: true,
     phone: "317.374.4477",
     instagram: "@ashleigh.taylor10",
@@ -355,11 +419,13 @@ export const professionals: Professional[] = [
     galleryImages: ["/images/gallery/abby-mcgowen-gallery.jpg"],
     role: "Hairstylist",
     acceptingClients: true,
+    acceptingClientsText: "Accepting New Extension & Color Clients",
     bio: "My name is Abby Evans McGowen, and I've been doing hair for almost 6 years. I am married to my best friend of 8 years, and we have a beautiful daughter together. I am an extension and transition/correction specialist. I love everything color, and anything that is creative, fun, and alternative. I'm certified in 5 different extension methods, and excel in making the impossible possible with extensions and a little bit of magic. I truly love what I do, and I love making people feel their absolute best all while looking it as well. I'm currently accepting new color and extension clients (no stand alone haircuts) at this time. For more pictures of my work you can follow my instagram at: powerofthe_brush",
     phone: "765.978.8435",
+    textOnly: true,
     suite: "Suite #7",
     instagram: "@powerofthe_brush",
-    hours: ["Monday: CLOSED", "Tuesday: CLOSED", "Wednesday: 11AM-7PM", "Thursday: 11AM-7PM", "Friday: CLOSED", "Saturday: CLOSED", "Sunday: CLOSED"],
+    hours: ["Monday: CLOSED", "Tuesday: CLOSED", "Wednesday: 10AM-7PM", "Thursday: 10AM-7PM", "Friday: CLOSED", "Saturday: CLOSED", "Sunday: CLOSED"],
     services: [
       {
         category: "Extensions",
@@ -377,6 +443,7 @@ export const professionals: Professional[] = [
       },
       {
         category: "Color & Highlighting",
+        note: "Prices are per hour",
         items: [
           { name: "Color", price: "$115" },
           { name: "Color Correction", price: "$150" },
