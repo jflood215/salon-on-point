@@ -271,6 +271,7 @@ export const professionals: Professional[] = [
     bio: "With over 18 years of experience as a massage therapist, 4 years as a skilled esthetician, and two decades as a dedicated yoga instructor, I am deeply committed to the art of holistic wellness. I offer a comprehensive approach to healing, specializing in techniques such as deep tissue, Swedish, hot stone therapy, myofascial release, cupping, and aromatherapy. My expertise also extends to facial massage, facial sculpting, body sculpting, and customized skincare treatments, including facials and professional waxing services. I incorporate energy work and sound healing into my sessions to support emotional balance and inner alignment. Passionate about caring for others, I am drawn to the transformative power of self-care and mind-body connection. Outside of my practice, I find inspiration in art and creativity, embracing their therapeutic qualities. I also enjoy the outdoors, fitness, and hiking, living a lifestyle that fosters balance, vitality, and personal expression.",
     phone: "765.721-5068",
     suite: "Suite #11",
+    bookingUrl: "https://laurenberetta.glossgenius.com/services",
     hours: ["Monday: CLOSED", "Tuesday: 10AM-3PM", "Wednesday: 5PM-8PM", "Thursday: 10AM-3PM", "Friday: 10AM-3PM", "Saturday: 5PM-8PM", "Sunday: 10AM-3PM"],
     services: [
       {
@@ -478,6 +479,7 @@ export const professionals: Professional[] = [
     bio: "Allison is an Esthetician and current owner of Allison Heckman Esthetics. She has been an esthetician for 10 years. Getting her start at Honors Beauty College. Completing 700+ hours and becoming certified internationally in many services such as Microdermabrasion, chemical peels, facials, massage and much more. She then went on to work for Villaggio Day Spa and Salon for almost 5 years before branching out to become a spa owner. Her favorite service to perform is the Image Vital C facial. She loves that her clients don't have to choose between relaxation and results. When not working she enjoys being a mom to her young son Landon, practicing yoga and watching or going to football games with her husband Lee.",
     phone: "317.201.5150",
     suite: "Suite #12",
+    bookingUrl: "https://www.joinblvd.com/b/cleanaesthetic/widget#/visit-type",
     hours: ["Monday: CLOSED", "Tuesday: 9:30AM - 5PM", "Wednesday: 9:30AM - 2PM", "Thursday: 9:30AM - 8PM", "Friday: 9:30AM - 5PM", "Saturday: 9:00AM - 2PM", "Sunday: CLOSED"],
     services: [
       {
