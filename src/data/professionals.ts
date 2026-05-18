@@ -36,6 +36,53 @@ export interface Professional {
 
 export const professionals: Professional[] = [
   {
+    name: "Amber McDowell",
+    slug: "amber-mcdowell",
+    initials: "AM",
+    role: "Hairstylist",
+    acceptingClients: true,
+    bio: "In my chair, you feel confident and comfortable, knowing that you choose the right girl in the right place to help you achieve your hair goals.",
+    suite: "Suite #16",
+    instagram: "@ask_for_amber",
+    website: "https://ambermcdowell.glossgenius.com",
+    bookingUrl: "https://ambermcdowell.glossgenius.com",
+    hours: ["Monday: CLOSED", "Tuesday: 10AM-5PM", "Wednesday: 9:30AM-5PM", "Thursday: 10AM-7PM", "Friday: 10AM-4PM", "Saturday: CLOSED", "Sunday: CLOSED"],
+    services: [
+      {
+        category: "Color Services",
+        items: [
+          { name: "Custom Lightening Session", price: "$250+", description: "Custom balayage, money piece, foilayage, etc" },
+          { name: "Partial Highlight", price: "$165+", description: "Crown highlight and face frame. Includes Cut and Blow out" },
+          { name: "Full Highlight", price: "$250+", description: "Full head highlights. This includes the crown, face frame and nape" },
+          { name: "Full Highlight/Lowlight", price: "$300+", description: "Full head highlight and lowlights. Includes cut/blowout" },
+          { name: "Grey Root Touch Up", price: "$135+", description: "Root coverage only. Generally grey coverage. Cut/blowout incl." },
+          { name: "Color Gloss", price: "$135+", description: "A semi or demi permanent color to make your existing color have more shine" },
+        ],
+      },
+      {
+        category: "Cut & Style Services",
+        items: [
+          { name: "Hair Cut", price: "$65", description: "Full Service Haircut, including Wash/Style" },
+          { name: "Mens Cut", price: "$35+", description: "Mens cut. Clippers or scissors. 30 mins or less" },
+          { name: "Formal Hair", price: "$85+", description: "Styled updo or formal styling service" },
+          { name: "Extension Services", price: "$350+", description: "I offer and am certified in multiple extension methods" },
+        ],
+      },
+      {
+        category: "Other Services",
+        items: [
+          { name: "Consultation", price: "$30", description: "Initial consultation appointment" },
+        ],
+      },
+    ],
+    testimonials: [
+      { quote: "I love the personal attention Amber gives her clients! She listens to me and helps me figure out the best style and color options for me! Make an appointment to see her at her new space…you won't be disappointed!", name: "Nikole" },
+      { quote: "Amber always does a GREAT job with my hair. I wouldn't want to go to anyone else. 🥰", name: "Becki Bradford" },
+      { quote: "Amber always makes my highlights look so natural and perfect - like my sun-kissed summer hair when I was a teen! Amber is also so kind and easy to talk to! Also, for the best highlights she charges Less than most! Amber is also very patient with my difficult schedule and welcomes me even when I come once a year!", name: "Nicole" },
+      { quote: "Amber is awesome!!!", name: "Joanna Robinson" },
+    ],
+  },
+  {
     name: "Mya Folden",
     slug: "mya-folden",
     initials: "MF",
