@@ -36,6 +36,27 @@ export interface Professional {
 
 export const professionals: Professional[] = [
   {
+    name: "Amanda Thomas",
+    slug: "amanda-thomas",
+    initials: "AT",
+    image: "/images/amanda-thomas.jpeg",
+    profileImage: "/images/amanda-thomas.jpeg",
+    role: "Certified Reiki Master/Teacher",
+    cardTitle: "Reiki Master/Teacher",
+    acceptingClients: true,
+    bio: "Hi, I'm Amanda Thomas, a certified Reiki Master/Teacher. With over 7 years in practice, I've had the honor of holding space for hundreds of people in one on one, group sessions, I've trained fellow Reiki practitioners and have served as a Reiki volunteer for hospice.\n\nMy practice is grounded in an intuitive approach that integrates energy work with hands-on healing touch, nervous system regulation, guided visualizations, and prayer.\n\nI have a special love for holding space for women navigating seasons of the in-between. When we allow ourselves to embrace the unknown with an open heart, I find that's when the richness of the great mystery of Life truly begins to unfold for our greater good. Whether you're seeking a release or a realignment, the space we share is intended to deepen your spiritual connection. Outside of the studio, I bring my energy practice into the work I do as an event planner and brand consultant. When I'm not working, I love to be with my daughters and husband, going on park adventures, dancing at the farmer's market, or finding pockets of peace while hiking.",
+    website: "http://www.amandathomascreative.com/reiki",
+    bookingUrl: "http://www.amandathomascreative.com/reiki",
+    services: [
+      {
+        category: "Reiki",
+        items: [
+          { name: "60 Minute Reiki Session", price: "$150", description: "A 1-hour energy healing session intended to deeply relax the body, restore peace of mind, and uplift your spirit. Sessions are intuitively led, integrating energy work with hands-on healing touch, nervous system regulation, guided visualizations, and prayer. Reiki sessions are wonderful for those navigating change and transition, looking to release energy that you've expanded beyond, and seeking deeper spiritual alignment." },
+        ],
+      },
+    ],
+  },
+  {
     name: "Amber McDowell",
     slug: "amber-mcdowell",
     initials: "AM",
