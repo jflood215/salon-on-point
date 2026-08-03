@@ -191,7 +191,16 @@ export default function ProfessionalPage({ params }: { params: { slug: string } 
                   </div>
                 )}
 
-                {(person.bookingUrl || person.phone) && (
+                {person.referralOnly && (
+                  <div style={{
+                    marginTop: "32px",
+                    fontFamily: "'Outfit', sans-serif",
+                    fontSize: "12px", letterSpacing: "3px", textTransform: "uppercase",
+                    color: gold, fontWeight: 400,
+                  }}>By referral only</div>
+                )}
+
+                {!person.referralOnly && (person.bookingUrl || person.phone) && (
                   <a href={person.bookingUrl || `${person.textOnly ? 'sms' : 'tel'}:${person.phone!.replace(/[.\-]/g, '')}`}
                     {...(person.bookingUrl ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                     style={{
@@ -242,10 +251,12 @@ export default function ProfessionalPage({ params }: { params: { slug: string } 
                               fontFamily: "'Outfit', sans-serif", fontSize: "14px",
                               color: "#3a3430", fontWeight: 300,
                             }}>{item.name}</span>
-                            <span style={{
-                              fontFamily: "'Outfit', sans-serif", fontSize: "14px",
-                              color: gold, fontWeight: 400, whiteSpace: "nowrap", marginLeft: "16px",
-                            }}>{item.price}</span>
+                            {item.price && (
+                              <span style={{
+                                fontFamily: "'Outfit', sans-serif", fontSize: "14px",
+                                color: gold, fontWeight: 400, whiteSpace: "nowrap", marginLeft: "16px",
+                              }}>{item.price}</span>
+                            )}
                           </div>
                           {item.description && (
                             <p style={{

@@ -1,6 +1,6 @@
 export interface ServiceItem {
   name: string;
-  price: string;
+  price?: string;
   description?: string;
 }
 
@@ -30,11 +30,87 @@ export interface Professional {
   instagram?: string;
   website?: string;
   bookingUrl?: string;
+  referralOnly?: boolean;
   hours?: string[];
   services?: ServiceCategory[];
 }
 
 export const professionals: Professional[] = [
+  {
+    name: "Katie Akers",
+    slug: "katie-akers",
+    initials: "KA",
+    role: "Hairstylist",
+    acceptingClients: true,
+    bio: "Hi! I'm Katie and I've been doing hair since 2020. I truly love creating transformations that feel beautiful, effortless, and personal—especially when it comes to blonding, lived-in color, and extensions. When I'm not in the salon, you'll usually find me enjoying my favorite things: coffee, good food, concerts, and shopping. I love trying new places and exploring what's out there—whether it's a new spot for a latte or a fun night out. When it's time to chill I enjoy binge watching shows and TikTok with my fur children, Miss Kitty, Ellie and Max!",
+    suite: "Suite #1",
+    bookingUrl: "https://mandedaze.glossgenius.com/",
+    hours: ["Monday: 1PM-9PM", "Tuesday: 1PM-9PM", "Wednesday: 1PM-9PM", "Thursday: 1PM-9PM", "Friday: 11AM-7PM", "Saturday: CLOSED", "Sunday: CLOSED"],
+    services: [
+      {
+        category: "Cuts",
+        note: "Each ManeDaze haircut includes a customized cut, relaxing wash, and signature finish. Currently specializing in medium to extra long haircuts — reach out for short or barber cuts.",
+        items: [
+          { name: "Signature Cut", price: "$65", description: "Designed to refresh your shape, or a trim. Ideally 1-4 inches off." },
+          { name: "Transformative Cut", price: "$75", description: "A major transformation for guests ready for a bold change, dramatic reshape, or completely refreshed look, with 4+ inches off." },
+          { name: "Long & Lush Cut", price: "$70", description: "Made for guests with extra long or thick hair needing additional time and detail." },
+          { name: "Bang Trim", price: "$15" },
+          { name: "Haircut Add-On", price: "$15+", description: "Add a haircut to any color service." },
+          { name: "Fade Daze", price: "$45", description: "Existing clients only." },
+        ],
+      },
+      {
+        category: "Styling",
+        items: [
+          { name: "Good Hair Daze", price: "$60", description: "A luxury blowout experience — a relaxing wash and blowout with a signature finish for soft movement, volume, and shine." },
+          { name: "Good Hair Daze — Long & Lush", price: "$70", description: "For guests with extra long, thick, or high density hair needing additional time and styling." },
+        ],
+      },
+      {
+        category: "Color",
+        note: "Length pricing: standard / long / extra long & lush.",
+        items: [
+          { name: "Shine Daze", price: "$30 add-on / $105 w/ blowdry / $120 w/ haircut", description: "A glossing service to refresh, enhance and tone your existing color while adding shine and softness. Perfect for refreshing faded tones, neutralizing unwanted warmth, or maintaining your blonde between blonding appointments." },
+          { name: "Root Revival", price: "$125 / $145", description: "Color applied directly to the root to blend new growth with the rest of the hair. Usually makes roots darker and is great for grey coverage, under 8 weeks of grow out. Includes blowout." },
+          { name: "Color Me Daze", price: "$150 / $175 / $200", description: "An all-over, single-process color creating a seamless, even result from roots to ends. Deepen or enhance your natural color, refresh faded tones, or go for a complete transformation from rich brunette to vibrant copper or red. Includes blowout." },
+          { name: "Glow Daze", price: "$165", description: "A customized foiling service adding pops of light around the hairline only, and the visible pieces that shine through in a ponytail or bun. Think subtle refresh or a touch of dimension. Includes gloss and blowdry." },
+          { name: "Partial Mane Foil", price: "$195 / $210 / $230", description: "Strategically placed highlights around the hairline, part line, and crown. Perfect for maintaining blonde between full foil appointments or adding dimension to brunette hair. Does not include the underneath sections. Includes gloss and blowout." },
+          { name: "Full Mane Foil", price: "$230 / $260 / $290", description: "Brightness and dimension throughout the entire head for a fully customized all-over blonde or dimensional look. Perfect for going lighter, refreshing highlights, or maintaining a bright blonde. Includes gloss and blowout." },
+          { name: "Lived-In Mane", price: "$230 / $265 / $295", description: "A customized balayage-inspired service using a foilyage technique for dimensional color with seamless grow-out — ribbons of dimension, a sun-kissed refresh, or a brighter blended result, for a beautiful low maintenance finish." },
+          { name: "Blonde Daze", price: "$380", description: "A transformative blonding service for guests looking to make a significant shift toward a lighter, brighter look. Perfect for those with natural or darker hair who want a major blonde transformation, especially with minimal to no existing lightness through the ends. Includes gloss and blowdry." },
+          { name: "Platinum Daze", price: "$215 root revival / $340 transformation" },
+        ],
+      },
+      {
+        category: "Treatments",
+        items: [
+          { name: "Keratherapy", price: "$230 / $280 / $330" },
+        ],
+      },
+      {
+        category: "Waxing & Brows",
+        note: "Includes consultation, precise hair removal, soothing product, and finishing touches.",
+        items: [
+          { name: "Brow Wax", price: "$20" },
+          { name: "Lip Wax", price: "$15" },
+          { name: "Chin Wax", price: "$15" },
+          { name: "Brow, Lip & Chin", price: "$40" },
+          { name: "Eyebrow Tint", price: "$25" },
+          { name: "Brow Tint & Wax", price: "$45" },
+        ],
+      },
+      {
+        category: "Consultations",
+        items: [
+          { name: "Color Consultation", price: "Free", description: "Not sure what to book, or don't yet know what color you want? I'll review your hair history, current color, and your goals to create the best plan for your desired look — then together we'll choose the right color service." },
+          { name: "Extension Consultation", price: "$20" },
+        ],
+      },
+    ],
+    testimonials: [
+      { quote: "I've been seeing Katie for a few years now, and I happily followed her to her new salon. She's always professional, friendly, and does an amazing job every time. The new location is beautiful, convenient, and has such a welcoming atmosphere. I'm so excited for her and highly recommend Katie and her new salon to anyone looking for quality service and a great experience! Congratulations on your new venture!", name: "Isabella Anthony" },
+    ],
+  },
   {
     name: "Adelyn Busald",
     slug: "adelyn-busald",
@@ -585,6 +661,7 @@ export const professionals: Professional[] = [
     phone: "317.753.6251",
     suite: "Suite #3",
     instagram: "@c.shanks.stylist",
+    bookingUrl: "https://book.squareup.com/appointments/63gwv1j7hkraqu/location/L8G3C8GD7EEME/services",
     hours: ["Monday: 9AM-5PM", "Tuesday: CLOSED", "Wednesday: CLOSED", "Thursday: 9AM-8PM", "Friday: 9AM-2PM", "Saturday: CLOSED", "Sunday: CLOSED"],
     services: [
       {
@@ -699,23 +776,24 @@ export const professionals: Professional[] = [
     bio: "Hey there! My name is Kelly Starkey. I am a passionate nail artist, and I take great pride in my work. My specialties include Luminary structured manicures, Gel X nail extensions, and spa pedicures. I blend creativity with skill to create flawless designs that truly reflect your individual style. Whether you're looking for something classic or a bit more elaborate, I aim to deliver exceptional service with stunning results. When I'm not at the salon, I love traveling with my husband and spending quality time with my teenage kids. I look forward to meeting you and making your nail dreams come true!",
     phone: "765.891-9078",
     suite: "Suite #5",
+    bookingUrl: "https://nothing-but-nails-by-kelly.square.site/",
     hours: ["By appointment \u2014 contact to schedule"],
     services: [
       {
         category: "Nails",
         items: [
-          { name: "Gel-X full set", price: "$75" },
-          { name: "Structured gel manicure", price: "$85" },
-          { name: "Soak off", price: "$20" },
-          { name: "Spa pedicure", price: "$65" },
-          { name: "Paraffin", price: "$10" },
+          { name: "Gel-X full set" },
+          { name: "Structured gel manicure" },
+          { name: "Soak off" },
+          { name: "Spa pedicure" },
+          { name: "Paraffin" },
         ],
       },
       {
         category: "Nail Art",
         items: [
-          { name: "Simple Art", price: "$15" },
-          { name: "Complex", price: "$30" },
+          { name: "Simple Art" },
+          { name: "Complex" },
         ],
       },
     ],
@@ -789,37 +867,38 @@ export const professionals: Professional[] = [
     bio: "Hi, for the past 12 years I've been doing hair in the Indianapolis area. My family and I moved to the neighborhood of Anson in Whitestown 5 years ago. And I am beyond excited to now be able to work right in the community we have grown to love so much. I am a very versatile stylist. I love that my clientele is made up of women, men, and children. I specialize in haircuts, and multidimensional hair color. I always keep up on the latest trends with on going education. I try to listen to my clients and achieve the style they are looking for.",
     phone: "317.703.9381",
     suite: "Suite #2",
+    referralOnly: true,
     hours: ["Monday: CLOSED", "Tuesday: CLOSED", "Wednesday: CLOSED", "Thursday: By Appointment", "Friday: By Appointment", "Saturday: By Appointment", "Sunday: CLOSED"],
     services: [
       {
         category: "Haircuts & Styling",
         items: [
-          { name: "Women's Haircut", price: "$50" },
-          { name: "Men's Haircut", price: "$32" },
-          { name: "Children's Haircut", price: "$25 and up" },
-          { name: "Blow-Out", price: "$30" },
-          { name: "Event Hair/ Updo", price: "$75" },
+          { name: "Women's Haircut" },
+          { name: "Men's Haircut" },
+          { name: "Children's Haircut" },
+          { name: "Blow-Out" },
+          { name: "Event Hair/ Updo" },
         ],
       },
       {
         category: "Treatments",
         items: [
-          { name: "Brazilian Blowout", price: "$160 and up" },
+          { name: "Brazilian Blowout" },
         ],
       },
       {
         category: "Color",
         items: [
-          { name: "All Over Color & Cut", price: "$110" },
-          { name: "Highlight & Cut", price: "$125" },
-          { name: "Balayage & Cut", price: "$140 and up" },
+          { name: "All Over Color & Cut" },
+          { name: "Highlight & Cut" },
+          { name: "Balayage & Cut" },
         ],
       },
       {
         category: "Wax",
         items: [
-          { name: "Brow", price: "$15" },
-          { name: "Lip", price: "$10" },
+          { name: "Brow" },
+          { name: "Lip" },
         ],
       },
     ],
