@@ -717,8 +717,9 @@ export const professionals: Professional[] = [
     galleryImages: [],
     role: "Hairstylist",
     bio: "Dannette has been in the industry for 25+ years. She has trained with some of the top stylists in her area. She believes in continuing education and has done numerous classes outside of the salon including classes for balayage with Candy Shaw, classes with Joseph DiMaggio, Sonya and Christopher Dove for Wella, color classes with Paul Mitchell the company, Davines color, Rusk, Euphora and Bennifactor just to name a few. She has also taken several industry business classes including Salon Inc.,and PSC Net. The love and passion Dannette has for the beauty industry is beyond words. She has learned over the years that the most important thing with a client is to listen and decipher what it is they want. She loves to pamper her clients and make them forget about the worries of the day. Dannette loves the transformation that she provides to a client through a cut or maybe a new color. She loves to do balayage, highlights, color and cutting.",
-    phone: "317.769.2600",
+    phone: "317-509-8819",
     suite: "Suite #4",
+    bookingUrl: "https://book.squareup.com/appointments/5oumc87e8u8xpp/location/1ND6GPN4SS2ZQ/services",
     hours: ["Monday: CLOSED", "Tuesday: 10AM-4:30PM", "Wednesday: 12PM-8PM", "Thursday: CLOSED", "Friday: 8AM-12PM", "Saturday: CLOSED", "Sunday: CLOSED"],
     services: [
       {
