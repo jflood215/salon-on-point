@@ -549,7 +549,7 @@ export const professionals: Professional[] = [
     bio: "Allison is an Esthetician and current owner of Allison Heckman Esthetics. She has been an esthetician for 10 years. Getting her start at Honors Beauty College. Completing 700+ hours and becoming certified internationally in many services such as Microdermabrasion, chemical peels, facials, massage and much more. She then went on to work for Villaggio Day Spa and Salon for almost 5 years before branching out to become a spa owner. Her favorite service to perform is the Image Vital C facial. She loves that her clients don't have to choose between relaxation and results. When not working she enjoys being a mom to her young son Landon, practicing yoga and watching or going to football games with her husband Lee.",
     phone: "317.201.5150",
     suite: "Suite #12",
-    bookingUrl: "https://www.joinblvd.com/b/cleanaesthetic/widget#/visit-type",
+    bookingUrl: "https://book.squareup.com/appointments/ckmt5hrsbkiz8x/location/34BFK42R3AT65/services",
     hours: ["Monday: CLOSED", "Tuesday: 9:30AM - 5PM", "Wednesday: 9:30AM - 2PM", "Thursday: 9:30AM - 8PM", "Friday: 9:30AM - 5PM", "Saturday: 9:00AM - 2PM", "Sunday: CLOSED"],
     services: [
       {
